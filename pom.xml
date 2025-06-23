@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.quynyhoang</groupId>
+    <artifactId>collaborative-prose</artifactId>
+    <version>1.0.0</version>
+
+    <repositories>
+        <!-- Elise -->
+        <repository>
+            <id>github-elise</id>
+            <url>https://maven.pkg.github.com/eliseHtw/my-prose-app</url>
+        </repository>
+        <!-- Jana -->
+        <repository>
+            <id>github-jana</id>
+<url>https://maven.pkg.github.com/joha1na/my-prose-app</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Eigene Komponente (lokal installiert via mvn install) -->
+        <dependency>
+            <groupId>com.quynyhoang</groupId>
+            <artifactId>my-prose-app</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Elise -->
+        <dependency>
+            <groupId>de.htw_berlin.fb4.elise</groupId>
+            <artifactId>my-prose-app</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- Jana -->
+        <dependency>
+            <groupId>de.htw_berlin.fb4.examples</groupId>
+            <artifactId>prose_library</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>
+
